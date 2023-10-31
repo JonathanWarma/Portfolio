@@ -47,7 +47,7 @@ const Contact = () => {
                     <p>Linkedin</p>
                 </div>
                 <div className="linkBox">
-                    <a href="https://github.com/"> <img src={link2} alt="" className="linkImg" /></a>
+                    <a href="https://github.com/JonathanWarma?tab=repositories"> <img src={link2} alt="" className="linkImg" /></a>
                     <p>GitHub</p>
                 </div>
 
