@@ -43,3 +43,20 @@
     font-weight: 200rem;
 }
 
+@media screen and (max-width:480px){
+    .projectBarText>p{
+        font-size: 1rem;
+       
+    }
+
+    .projectBarText>h2{
+        font-size: 1.25rem;
+       
+    }
+
+    .projectBarImg{
+        height: 6rem;
+        width: 6rem;
+
+      }
+ }

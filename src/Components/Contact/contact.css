@@ -20,8 +20,8 @@
 }
 .linkImg{
  object-fit: cover;
- height: 5rem;
- width: 5rem;
+ height: 4rem;
+ width: 4rem;
  transition: transform 0.3s;
 }
 .linkImg:hover{
@@ -69,3 +69,4 @@
     margin: 2rem;
     padding: 0.75rem 3.5rem;
 }
+
