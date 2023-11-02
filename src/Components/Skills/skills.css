@@ -49,13 +49,6 @@
 }
 
 
-@media screen and (max-width:720px){
-    .skillBarText>p{
-        font-size: 2rem;
-        font-weight: 200rem;
-    }
-    
- }
 
 
  @media screen and (max-width:480px){
