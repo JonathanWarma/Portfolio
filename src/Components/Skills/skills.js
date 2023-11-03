@@ -65,7 +65,9 @@ const Skills = () => {
 
             </div>
 
-            <div className='Language'>
+            <div className='language'>
+                <h2>Languages</h2>
+                <p>These are a few of the languages I've picked up on my path as a developer.</p>
                 <div className='web'>
                 <h1>Web:</h1>
                     <img src={html} alt="" className="langImg" />

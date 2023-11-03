@@ -47,6 +47,16 @@
     font-size: 1rem;
     font-weight: 200rem;
 }
+.language{
+max-width: 90%;
+}
+
+.language>h2{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+}
 
 .langImg{
     height: 5rem;
@@ -57,7 +67,7 @@
 .web , .app, .DB{
     display: inline;
     display: flex;
-    margin-bottom: 1rem;
+    margin-top: 1.5rem;
 }
 .web>h1 , .app>h1 , .DB>h1{
     padding-top:1.5rem ;
@@ -79,7 +89,9 @@
         font-size: 1.25rem;
       
     }
-
+    .language>h2{
+        font-size:2rem;
+    }
     .langImg{
         height: 3rem;
         width: 3rem;
