@@ -5,6 +5,20 @@ import WebDesign from '../../assets/website-design.png';
 import AppDesign from '../../assets/app-design.png';
 import Blender from '../../assets/Blender.png';
 
+import html from '../../assets/html.png';
+import css from '../../assets/css.png';
+import php from '../../assets/php.png';
+import js from '../../assets/javascript.png';
+import react from '../../assets/react.png';
+
+import c from '../../assets/c.png';
+import cpp from '../../assets/cpp.png';
+import cs from '../../assets/csharp.png';
+import java from '../../assets/java.png';
+
+import sql from '../../assets/sql.png';
+import mysql from '../../assets/mysql.png';
+
 
 
 
@@ -49,6 +63,37 @@ const Skills = () => {
                     </div>
                 </div>
 
+            </div>
+
+            <div className='Language'>
+                <div className='web'>
+                <h1>Web:</h1>
+                    <img src={html} alt="" className="langImg" />
+                    <img src={css} alt="" className="langImg" />
+                    <img src={php} alt="" className="langImg" />
+                    <img src={js} alt="" className="langImg" />
+                    <img src={react} alt="" className="langImg" />
+
+                </div>
+            
+
+                <div className='app'>
+                    <h1>Apps:</h1>
+                    <img src={c} alt="" className="langImg" />
+                    <img src={cpp} alt="" className="langImg" />
+                    <img src={cs} alt="" className="langImg" />
+                    <img src={java} alt="" className="langImg" />
+                 
+
+                </div>
+
+                <div className='app'>
+                    <h1>Data-Base:</h1>
+                    <img src={sql} alt="" className="langImg" />
+                    <img src={mysql} alt="" className="langImg" />
+                  
+
+                </div>
             </div>
         </section>
     )

@@ -48,8 +48,22 @@
     font-weight: 200rem;
 }
 
+.langImg{
+    height: 5rem;
+    width: 5rem;
+    object-fit: cover;
+    margin-right: 2rem;
+  }
+.web , .app, .DB{
+    display: inline;
+    display: flex;
+    margin-bottom: 1rem;
+}
+.web>h1 , .app>h1 , .DB>h1{
+    padding-top:1.5rem ;
+    font-size: 2rem;
 
-
+}
 
  @media screen and (max-width:480px){
     .skillBarText>p{
@@ -65,5 +79,18 @@
         font-size: 1.25rem;
       
     }
+
+    .langImg{
+        height: 3rem;
+        width: 3rem;
+        margin-right: 1rem;
+      }
+
+      .web>h1 , .app>h1 , .DB>h1{
+        padding-top:0.75rem ;
+        font-size: 1.5rem;
+    
+    }
+    
 
  }
