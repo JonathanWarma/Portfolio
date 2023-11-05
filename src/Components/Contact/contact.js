@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef , useState } from 'react';
 import "./contact.css";
 import link1 from "../../assets/resume.png";
 import link2 from "../../assets/github.png";
@@ -8,14 +8,42 @@ import CV from "../../assets/CV-JONATHAN-DEV.pdf";
 
 const Contact = () => {
     const form = useRef();
+
+    //
+    const [errorMessage, setErrorMessage] = useState(null);
+    const [successMessage, setSuccessMessage] = useState(null);
+  
+    //
     const sendEmail = (e) => {
         e.preventDefault();
+        //
+        const name = form.current.elements.your_name.value;
+        const email = form.current.elements.your_email.value;
+        const message = form.current.elements.message.value;
+    
+        // Perform validation
+        if (!name || !email || !message) {
+          setErrorMessage('Please fill in all fields.');
+          return;
+        }
+    
+        // Clear any previous error or success messages
+        setErrorMessage(null);
+        setSuccessMessage(null);
+        //
 
         emailjs.sendForm('service_25z7gjd', 'template_rra8fpd', form.current, 's_k8-81kj4bYsePgW')
             .then((result) => {
                 console.log(result.text);
+                setSuccessMessage('Message sent successfully');
+
+                setTimeout(() => {
+                    window.location.reload();
+                  }, 1000);
+               
             }, (error) => {
                 console.log(error.text);
+                setErrorMessage('Failed to send the message. Please try again later.');
             });
     };
 
@@ -33,6 +61,8 @@ const Contact = () => {
                     <button type="submit" value="send" className="submitBtn">submit</button>
 
                 </form>
+                {errorMessage && <div className="error-message">{errorMessage}</div>}
+                 {successMessage && <div className="success-message">{successMessage}</div>}
             </div>
 
 
